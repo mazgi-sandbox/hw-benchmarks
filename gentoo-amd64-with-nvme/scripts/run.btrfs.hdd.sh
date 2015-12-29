@@ -40,9 +40,9 @@ do
   do
     for bs in "${BSS[@]}"
     do
-      prepare "${raid_opt}"
       echo "### btrfs raid ${raid_opt}, rw=${rw}, bs=${bs}"
       echo ''
+      prepare "${raid_opt}"
       echo '* Run fio benchmark'
       echo ''
       echo '```'
