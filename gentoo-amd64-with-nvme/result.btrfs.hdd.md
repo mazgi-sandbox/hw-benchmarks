@@ -1,3 +1,5 @@
+### btrfs raid -m raid0 -d raid0, rw=read, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -13,8 +15,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=read, bs=4k
 
 * Run fio benchmark
 
@@ -92,6 +92,8 @@ Run status group 0 (all jobs):
    READ: io=1398.4MB, aggrb=23547KB/s, minb=23547KB/s, maxb=23547KB/s, mint=60809msec, maxt=60809msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=read, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -107,8 +109,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=read, bs=16k
 
 * Run fio benchmark
 
@@ -186,6 +186,8 @@ Run status group 0 (all jobs):
    READ: io=5120.0MB, aggrb=89513KB/s, minb=89513KB/s, maxb=89513KB/s, mint=58571msec, maxt=58571msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=write, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -201,8 +203,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=write, bs=4k
 
 * Run fio benchmark
 
@@ -281,6 +281,8 @@ Run status group 0 (all jobs):
   WRITE: io=2507.6MB, aggrb=42653KB/s, minb=42653KB/s, maxb=42653KB/s, mint=60199msec, maxt=60199msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=write, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -296,8 +298,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=write, bs=16k
 
 * Run fio benchmark
 
@@ -375,6 +375,8 @@ Run status group 0 (all jobs):
   WRITE: io=5120.0MB, aggrb=157472KB/s, minb=157472KB/s, maxb=157472KB/s, mint=33294msec, maxt=33294msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=randread, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -390,8 +392,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=randread, bs=4k
 
 * Run fio benchmark
 
@@ -469,6 +469,8 @@ Run status group 0 (all jobs):
    READ: io=154552KB, aggrb=2554KB/s, minb=2554KB/s, maxb=2554KB/s, mint=60495msec, maxt=60495msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=randread, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -484,8 +486,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=randread, bs=16k
 
 * Run fio benchmark
 
@@ -563,6 +563,8 @@ Run status group 0 (all jobs):
    READ: io=574160KB, aggrb=9477KB/s, minb=9477KB/s, maxb=9477KB/s, mint=60584msec, maxt=60584msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=randwrite, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -578,8 +580,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=randwrite, bs=4k
 
 * Run fio benchmark
 
@@ -658,6 +658,8 @@ Run status group 0 (all jobs):
   WRITE: io=139060KB, aggrb=2290KB/s, minb=2290KB/s, maxb=2290KB/s, mint=60707msec, maxt=60707msec
 ```
 
+### btrfs raid -m raid0 -d raid0, rw=randwrite, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -673,8 +675,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid0, rw=randwrite, bs=16k
 
 * Run fio benchmark
 
@@ -753,6 +753,8 @@ Run status group 0 (all jobs):
   WRITE: io=530224KB, aggrb=8776KB/s, minb=8776KB/s, maxb=8776KB/s, mint=60415msec, maxt=60415msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=read, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -768,8 +770,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=read, bs=4k
 
 * Run fio benchmark
 
@@ -846,6 +846,8 @@ Run status group 0 (all jobs):
    READ: io=5120.0MB, aggrb=186572KB/s, minb=186572KB/s, maxb=186572KB/s, mint=28101msec, maxt=28101msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=read, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -861,8 +863,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=read, bs=16k
 
 * Run fio benchmark
 
@@ -939,6 +939,8 @@ Run status group 0 (all jobs):
    READ: io=5120.0MB, aggrb=219827KB/s, minb=219827KB/s, maxb=219827KB/s, mint=23850msec, maxt=23850msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=write, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -954,8 +956,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=write, bs=4k
 
 * Run fio benchmark
 
@@ -1033,6 +1033,8 @@ Run status group 0 (all jobs):
   WRITE: io=1719.7MB, aggrb=29251KB/s, minb=29251KB/s, maxb=29251KB/s, mint=60201msec, maxt=60201msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=write, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -1048,8 +1050,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=write, bs=16k
 
 * Run fio benchmark
 
@@ -1127,6 +1127,8 @@ Run status group 0 (all jobs):
   WRITE: io=5120.0MB, aggrb=98234KB/s, minb=98234KB/s, maxb=98234KB/s, mint=53371msec, maxt=53371msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=randread, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -1142,8 +1144,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=randread, bs=4k
 
 * Run fio benchmark
 
@@ -1221,6 +1221,8 @@ Run status group 0 (all jobs):
    READ: io=147912KB, aggrb=2444KB/s, minb=2444KB/s, maxb=2444KB/s, mint=60509msec, maxt=60509msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=randread, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -1236,8 +1238,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=randread, bs=16k
 
 * Run fio benchmark
 
@@ -1314,6 +1314,8 @@ Run status group 0 (all jobs):
    READ: io=575200KB, aggrb=9499KB/s, minb=9499KB/s, maxb=9499KB/s, mint=60552msec, maxt=60552msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=randwrite, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -1329,8 +1331,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=randwrite, bs=4k
 
 * Run fio benchmark
 
@@ -1408,6 +1408,8 @@ Run status group 0 (all jobs):
   WRITE: io=71896KB, aggrb=1185KB/s, minb=1185KB/s, maxb=1185KB/s, mint=60646msec, maxt=60646msec
 ```
 
+### btrfs raid -m raid0 -d raid1, rw=randwrite, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -1423,8 +1425,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid0 -d raid1, rw=randwrite, bs=16k
 
 * Run fio benchmark
 
@@ -1502,6 +1502,8 @@ Run status group 0 (all jobs):
   WRITE: io=291456KB, aggrb=4811KB/s, minb=4811KB/s, maxb=4811KB/s, mint=60580msec, maxt=60580msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=read, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -1517,8 +1519,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=read, bs=4k
 
 * Run fio benchmark
 
@@ -1596,6 +1596,8 @@ Run status group 0 (all jobs):
    READ: io=1413.6MB, aggrb=23943KB/s, minb=23943KB/s, maxb=23943KB/s, mint=60451msec, maxt=60451msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=read, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -1611,8 +1613,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=read, bs=16k
 
 * Run fio benchmark
 
@@ -1690,6 +1690,8 @@ Run status group 0 (all jobs):
    READ: io=5120.0MB, aggrb=90781KB/s, minb=90781KB/s, maxb=90781KB/s, mint=57753msec, maxt=57753msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=write, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -1705,8 +1707,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=write, bs=4k
 
 * Run fio benchmark
 
@@ -1785,6 +1785,8 @@ Run status group 0 (all jobs):
   WRITE: io=2515.4MB, aggrb=42756KB/s, minb=42756KB/s, maxb=42756KB/s, mint=60241msec, maxt=60241msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=write, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -1800,8 +1802,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=write, bs=16k
 
 * Run fio benchmark
 
@@ -1879,6 +1879,8 @@ Run status group 0 (all jobs):
   WRITE: io=5120.0MB, aggrb=158246KB/s, minb=158246KB/s, maxb=158246KB/s, mint=33131msec, maxt=33131msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=randread, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -1894,8 +1896,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=randread, bs=4k
 
 * Run fio benchmark
 
@@ -1973,6 +1973,8 @@ Run status group 0 (all jobs):
    READ: io=153652KB, aggrb=2540KB/s, minb=2540KB/s, maxb=2540KB/s, mint=60482msec, maxt=60482msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=randread, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -1988,8 +1990,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=randread, bs=16k
 
 * Run fio benchmark
 
@@ -2068,6 +2068,8 @@ Run status group 0 (all jobs):
    READ: io=575696KB, aggrb=9502KB/s, minb=9502KB/s, maxb=9502KB/s, mint=60583msec, maxt=60583msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=randwrite, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -2083,8 +2085,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=randwrite, bs=4k
 
 * Run fio benchmark
 
@@ -2163,6 +2163,8 @@ Run status group 0 (all jobs):
   WRITE: io=140832KB, aggrb=2325KB/s, minb=2325KB/s, maxb=2325KB/s, mint=60559msec, maxt=60559msec
 ```
 
+### btrfs raid -m raid1 -d raid0, rw=randwrite, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -2178,8 +2180,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid0, rw=randwrite, bs=16k
 
 * Run fio benchmark
 
@@ -2258,6 +2258,8 @@ Run status group 0 (all jobs):
   WRITE: io=545312KB, aggrb=8993KB/s, minb=8993KB/s, maxb=8993KB/s, mint=60634msec, maxt=60634msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=read, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -2273,8 +2275,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=read, bs=4k
 
 * Run fio benchmark
 
@@ -2351,6 +2351,8 @@ Run status group 0 (all jobs):
    READ: io=5120.0MB, aggrb=187125KB/s, minb=187125KB/s, maxb=187125KB/s, mint=28018msec, maxt=28018msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=read, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -2366,8 +2368,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=read, bs=16k
 
 * Run fio benchmark
 
@@ -2444,6 +2444,8 @@ Run status group 0 (all jobs):
    READ: io=5120.0MB, aggrb=224948KB/s, minb=224948KB/s, maxb=224948KB/s, mint=23307msec, maxt=23307msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=write, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -2459,8 +2461,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=write, bs=4k
 
 * Run fio benchmark
 
@@ -2538,6 +2538,8 @@ Run status group 0 (all jobs):
   WRITE: io=1661.7MB, aggrb=28252KB/s, minb=28252KB/s, maxb=28252KB/s, mint=60225msec, maxt=60225msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=write, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -2553,8 +2555,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=write, bs=16k
 
 * Run fio benchmark
 
@@ -2632,6 +2632,8 @@ Run status group 0 (all jobs):
   WRITE: io=5120.0MB, aggrb=95763KB/s, minb=95763KB/s, maxb=95763KB/s, mint=54748msec, maxt=54748msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=randread, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -2647,8 +2649,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=randread, bs=4k
 
 * Run fio benchmark
 
@@ -2726,6 +2726,8 @@ Run status group 0 (all jobs):
    READ: io=148120KB, aggrb=2446KB/s, minb=2446KB/s, maxb=2446KB/s, mint=60532msec, maxt=60532msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=randread, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -2741,8 +2743,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=randread, bs=16k
 
 * Run fio benchmark
 
@@ -2819,6 +2819,8 @@ Run status group 0 (all jobs):
    READ: io=572608KB, aggrb=9459KB/s, minb=9459KB/s, maxb=9459KB/s, mint=60533msec, maxt=60533msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=randwrite, bs=4k
+
 * Make and mount filesystem
 
 ```
@@ -2834,8 +2836,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=randwrite, bs=4k
 
 * Run fio benchmark
 
@@ -2913,6 +2913,8 @@ Run status group 0 (all jobs):
   WRITE: io=74372KB, aggrb=1229KB/s, minb=1229KB/s, maxb=1229KB/s, mint=60488msec, maxt=60488msec
 ```
 
+### btrfs raid -m raid1 -d raid1, rw=randwrite, bs=16k
+
 * Make and mount filesystem
 
 ```
@@ -2928,8 +2930,6 @@ fs created label (null) on /dev/sda
 	nodesize 16384 leafsize 16384 sectorsize 4096 size 7.28TiB
 mount -o defaults,device=/dev/sda,device=/dev/sdb /dev/sda /mnt/btrfs
 ```
-
-### btrfs raid -m raid1 -d raid1, rw=randwrite, bs=16k
 
 * Run fio benchmark
 
