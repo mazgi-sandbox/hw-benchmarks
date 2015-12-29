@@ -16,7 +16,7 @@ function prepare() {
   umount -f "${MOUNT_POINT}" 2> /dev/null || true
   mkdir -p "${MOUNT_POINT}"
   echo mkfs.btrfs --force "${DEVICES[@]}"
-  mkfs.btrfs --force "${DEVICES[@]}"
+  mkfs.btrfs --force "${DEVICE}"
   MOUNT_OPT="defaults"
   echo mount -o "${MOUNT_OPT}" "${DEVICE}" "${MOUNT_POINT}"
   mount -o "${MOUNT_OPT}" "${DEVICE}" "${MOUNT_POINT}"
